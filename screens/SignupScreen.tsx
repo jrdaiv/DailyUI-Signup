@@ -4,7 +4,6 @@ import { Text, View, Alert, ImageBackground } from 'react-native';
 import { signupUser } from 'services/api';
 import Button from 'components/Button';
 
-
 const SignupScreen = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -28,7 +27,7 @@ const SignupScreen = () => {
   return (
     <>
       <View className="items-center p-4">
-        <Text className="text-white underline text-5xl font-bold mb-10">Sign Up</Text>
+        <Text className="mb-10 text-5xl font-bold text-white underline">Sign Up</Text>
       </View>
       <View className="items-center p-4">
         <SignupInput placeholder="Username" value={username} onChangeText={setUsername} />
