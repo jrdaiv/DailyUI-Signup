@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SignupInput from 'components/SignupInput';
-import { Text, View, Alert } from 'react-native';
+import { Text, View, Alert, ImageBackground } from 'react-native';
 import { signupUser } from 'services/api';
 import Button from 'components/Button';
 
@@ -27,8 +27,10 @@ const SignupScreen = () => {
 
   return (
     <>
-      <View className="flex-1 items-center justify-center p-4 ">
-        <Text className="text-black text-lg font-bold ">Sign Up</Text>
+      <View className="items-center p-4">
+        <Text className="text-white underline text-5xl font-bold mb-10">Sign Up</Text>
+      </View>
+      <View className="items-center p-4">
         <SignupInput placeholder="Username" value={username} onChangeText={setUsername} />
         <SignupInput placeholder="Email" value={email} onChangeText={setEmail} />
         <SignupInput

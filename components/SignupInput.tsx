@@ -11,7 +11,7 @@ interface Props {
 const SignupInput: React.FC<Props> = ({ placeholder, value, onChangeText, secureTextEntry }) => {
   return (
     <TextInput
-      className='w-full p-2 border border-gray-300 rounded bg-white mb-2'
+      className='w-72 p-2 border border-gray-300 rounded bg-white mb-2'
       placeholder={placeholder}
       value={value}
       onChangeText={onChangeText}
