@@ -1,13 +1,11 @@
-import { ScreenContent } from 'components/ScreenContent';
-import { StatusBar } from 'expo-status-bar';
-
+import SignupScreen from 'screens/SignupScreen';
 import './global.css';
+import React from 'react';
 
 export default function App() {
   return (
     <>
-      <ScreenContent title="Home" path="App.tsx"></ScreenContent>
-      <StatusBar style="auto" />
+      <SignupScreen />
     </>
   );
 }
